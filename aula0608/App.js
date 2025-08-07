@@ -1,4 +1,5 @@
-import { View, Text } from "react-native";
+import { View, Text, Alert } from "react-native";
+import { Button, Switch } from "react-native-web";
 
 export default function App() {
   return (
@@ -11,7 +12,9 @@ export default function App() {
     >
       <Text>Batata</Text>
       <Text>Eu amo batata</Text>
-      
-    </View>
+      <Button title="Clique aqui" onPress={() => alert("Clicou!")} />
+        <Switch value={true} />
+        <Alert title="Alerta Batata" message="Isso é um alerta batata!" />
+    </View> 
   );
 }
